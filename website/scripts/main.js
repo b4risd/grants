@@ -2,6 +2,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearSpan = document.getElementById('yil');
   if (yearSpan) yearSpan.textContent = String(new Date().getFullYear());
 
+  // Theme switching
+  const body = document.body;
+  const themeSelect = document.getElementById('theme-select');
+  function applyTheme(theme) {
+    body.classList.remove('theme-corporate', 'theme-neon', 'theme-matte');
+    body.classList.add(`theme-${theme}`);
+    try { localStorage.setItem('theme', theme); } catch {}
+    if (themeSelect && 'value' in themeSelect) themeSelect.value = theme;
+  }
+  const savedTheme = (() => { try { return localStorage.getItem('theme'); } catch { return null; } })();
+  applyTheme(savedTheme || 'corporate');
+  if (themeSelect) {
+    themeSelect.addEventListener('change', () => applyTheme(themeSelect.value));
+  }
+
   // Mobile menu toggle
   const navToggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav');
