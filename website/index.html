@@ -3,72 +3,150 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hoş Geldiniz | Web Siteniz</title>
-    <meta name="description" content="Modern, hızlı ve erişilebilir bir web sitesi." />
+    <title>SavunmaTek | Savunma Sanayi Çözümleri</title>
+    <meta name="description" content="Savunma sanayi için ileri seviye yazılım, elektronik ve sistem entegrasyonu çözümleri." />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="preload" as="image" href="/assets/hero.png" />
     <link rel="stylesheet" href="/styles/main.css" />
+    <meta property="og:title" content="SavunmaTek | Savunma Sanayi Çözümleri" />
+    <meta property="og:description" content="Güvenilir, ölçeklenebilir ve uyumlu savunma teknolojileri." />
+    <meta property="og:type" content="website" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SavunmaTek",
+      "url": "https://example.local",
+      "logo": "/assets/logo.svg",
+      "sameAs": []
+    }
+    </script>
   </head>
-  <body>
+  <body class="theme-dark">
     <header class="site-header">
       <div class="container">
-        <a class="logo" href="/">WebSiteniz</a>
+        <a class="brand" href="/">
+          <img src="/assets/logo.svg" alt="SavunmaTek" width="150" height="34" />
+        </a>
+        <button class="nav-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">☰</button>
         <nav aria-label="Ana menü" class="nav">
-          <a href="#ozellikler">Özellikler</a>
-          <a href="#hakkinda">Hakkında</a>
-          <a href="#iletisim">İletişim</a>
+          <a href="#yetenekler">Yetenekler</a>
+          <a href="#projeler">Projeler</a>
+          <a href="#haberler">Haberler</a>
+          <a href="#iletisim" class="btn btn-primary">Teklif Alın</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero" id="hero">
-        <div class="container">
-          <div class="hero-text">
-            <h1>Modern web deneyimine merhaba deyin</h1>
-            <p>Hızlı, SEO uyumlu ve erişilebilir bir web sitesi. Sizin için özel olarak tasarlayalım.</p>
-            <form class="cta" id="cta-form">
-              <label class="sr-only" for="email">E-posta</label>
-              <input id="email" name="email" type="email" placeholder="E-posta adresiniz" required />
-              <button type="submit">Beni Bilgilendir</button>
-            </form>
+      <section class="hero bg-grid" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-text reveal">
+            <h1>Görev Kritiği Sistemler. Güvenilir Sonuçlar.</h1>
+            <p>Komuta-kontrol, radar ve İHA sistemleri için yüksek güvenlikli yazılım ve donanım çözümleri sunuyoruz.</p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#iletisim">İletişime Geçin</a>
+              <a class="btn btn-ghost" href="#yetenekler">Yeteneklerimizi İnceleyin</a>
+            </div>
           </div>
-          <div class="hero-media">
-            <img src="/assets/hero.png" alt="Web sitesini temsil eden görsel" width="640" height="360" />
-          </div>
-        </div>
-      </section>
-
-      <section class="features" id="ozellikler">
-        <div class="container grid-3">
-          <div class="card">
-            <h3>Hızlı</h3>
-            <p>Optimize edilmiş varlıklar ve akıllı önbellekleme ile yüksek performans.</p>
-          </div>
-          <div class="card">
-            <h3>Erişilebilir</h3>
-            <p>WCAG yönergelerine uygun, klavye ve ekran okuyucu dostu.</p>
-          </div>
-          <div class="card">
-            <h3>Duyarlı</h3>
-            <p>Tüm cihazlarda harika görünen esnek tasarım.</p>
+          <div class="hero-media reveal">
+            <img src="/assets/hero.png" alt="Savunma teknolojileri görseli" width="720" height="404" />
           </div>
         </div>
       </section>
 
-      <section class="about" id="hakkinda">
+      <section class="features" id="yetenekler">
         <div class="container">
-          <h2>Biz Kimiz?</h2>
-          <p>Markanız için ölçülebilir sonuçlar üreten deneyimli bir web geliştirme ekibiyiz.</p>
+          <h2 class="section-title">Yetenekler</h2>
+          <div class="grid-3">
+            <article class="card glass reveal">
+              <div class="icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3.5 8-7 10C8.5 20 5 17 5 12V6l7-4z" stroke="#22d3ee" stroke-width="1.5" fill="rgba(34,211,238,0.08)"/></svg>
+              </div>
+              <h3>Güvenlik & Kriptografi</h3>
+              <p>Donanım güven kökü, anahtar yönetimi ve kurumsal PKI entegrasyonu.</p>
+            </article>
+            <article class="card glass reveal">
+              <div class="icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#60a5fa" stroke-width="1.5"/><path d="M12 3v6m0 6v6M3 12h6m6 0h6" stroke="#60a5fa" stroke-width="1.5"/></svg>
+              </div>
+              <h3>Radar ve Sensör Füzyonu</h3>
+              <p>Gerçek zamanlı hedef izleme, sinyal işleme ve veri füzyon algoritmaları.</p>
+            </article>
+            <article class="card glass reveal">
+              <div class="icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 15l8-12 8 12H4z" stroke="#a7f3d0" stroke-width="1.5"/><path d="M12 3v18" stroke="#a7f3d0" stroke-width="1.5"/></svg>
+              </div>
+              <h3>İnsansız Sistemler</h3>
+              <p>Uçuş kontrol yazılımları, yer istasyonu ve emniyetli haberleşme.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="companies" aria-label="Referans Şirketler">
+        <div class="container">
+          <div class="logo-row reveal">
+            <span class="pill">AQAP</span>
+            <span class="pill">ISO 9001</span>
+            <span class="pill">ISO 27001</span>
+            <span class="pill">NATO STANAG</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projeler">
+        <div class="container">
+          <h2 class="section-title">Projeler</h2>
+          <div class="grid-3">
+            <article class="project-card reveal">
+              <div class="project-media"></div>
+              <div class="project-body">
+                <h3>Hava Savunma C2</h3>
+                <p>Gerçek zamanlı görev planlama ve dağıtık sistem entegrasyonu.</p>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-media"></div>
+              <div class="project-body">
+                <h3>İHA Sürüsü</h3>
+                <p>Otonom görev icrası ve dayanıklı haberleşme ağı.</p>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-media"></div>
+              <div class="project-body">
+                <h3>Radar İşleme</h3>
+                <p>Düşük SNR koşullarında hedef tespiti için sinyal işleme zinciri.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="news" id="haberler">
+        <div class="container">
+          <h2 class="section-title">Haberler</h2>
+          <ul class="news-list">
+            <li class="reveal"><time datetime="2025-07-01">01 Tem 2025</time> NATO uyumluluk testleri başarıyla tamamlandı.</li>
+            <li class="reveal"><time datetime="2025-05-15">15 May 2025</time> İHA sürü yazılımımız 2.0 sürümü yayınlandı.</li>
+            <li class="reveal"><time datetime="2025-03-20">20 Mar 2025</time> Yeni RF laboratuvarımız faaliyete geçti.</li>
+          </ul>
         </div>
       </section>
 
       <section class="contact" id="iletisim">
         <div class="container">
-          <h2>İletişim</h2>
-          <form id="contact-form" class="contact-form">
+          <h2 class="section-title">İletişim</h2>
+          <form id="contact-form" class="contact-form card glass">
             <div class="form-row">
               <label for="ad">Adınız</label>
               <input id="ad" name="ad" required />
+            </div>
+            <div class="form-row">
+              <label for="kurum">Kurum</label>
+              <input id="kurum" name="kurum" />
             </div>
             <div class="form-row">
               <label for="eposta">E-posta</label>
@@ -78,7 +156,12 @@
               <label for="mesaj">Mesajınız</label>
               <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
             </div>
-            <button type="submit">Gönder</button>
+            <label class="checkbox">
+              <input type="checkbox" id="kvkk" required />
+              <span>Kişisel verilerimin KVKK kapsamında işlenmesini kabul ediyorum.</span>
+            </label>
+            <button type="submit" class="btn btn-primary full">Gönder</button>
+            <p class="muted">Yanıt süremiz genellikle 1 iş günü.</p>
           </form>
         </div>
       </section>
@@ -86,7 +169,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>© <span id="yil"></span> WebSiteniz. Tüm hakları saklıdır.</p>
+        <p>© <span id="yil"></span> SavunmaTek — Gizlilik • Çerezler • Uyum</p>
       </div>
     </footer>
 
