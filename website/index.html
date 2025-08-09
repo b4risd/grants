@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hoş Geldiniz | Web Siteniz</title>
+    <meta name="description" content="Modern, hızlı ve erişilebilir bir web sitesi." />
+    <link rel="preload" as="image" href="/assets/hero.png" />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="/">WebSiteniz</a>
+        <nav aria-label="Ana menü" class="nav">
+          <a href="#ozellikler">Özellikler</a>
+          <a href="#hakkinda">Hakkında</a>
+          <a href="#iletisim">İletişim</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-text">
+            <h1>Modern web deneyimine merhaba deyin</h1>
+            <p>Hızlı, SEO uyumlu ve erişilebilir bir web sitesi. Sizin için özel olarak tasarlayalım.</p>
+            <form class="cta" id="cta-form">
+              <label class="sr-only" for="email">E-posta</label>
+              <input id="email" name="email" type="email" placeholder="E-posta adresiniz" required />
+              <button type="submit">Beni Bilgilendir</button>
+            </form>
+          </div>
+          <div class="hero-media">
+            <img src="/assets/hero.png" alt="Web sitesini temsil eden görsel" width="640" height="360" />
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="ozellikler">
+        <div class="container grid-3">
+          <div class="card">
+            <h3>Hızlı</h3>
+            <p>Optimize edilmiş varlıklar ve akıllı önbellekleme ile yüksek performans.</p>
+          </div>
+          <div class="card">
+            <h3>Erişilebilir</h3>
+            <p>WCAG yönergelerine uygun, klavye ve ekran okuyucu dostu.</p>
+          </div>
+          <div class="card">
+            <h3>Duyarlı</h3>
+            <p>Tüm cihazlarda harika görünen esnek tasarım.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="hakkinda">
+        <div class="container">
+          <h2>Biz Kimiz?</h2>
+          <p>Markanız için ölçülebilir sonuçlar üreten deneyimli bir web geliştirme ekibiyiz.</p>
+        </div>
+      </section>
+
+      <section class="contact" id="iletisim">
+        <div class="container">
+          <h2>İletişim</h2>
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <label for="ad">Adınız</label>
+              <input id="ad" name="ad" required />
+            </div>
+            <div class="form-row">
+              <label for="eposta">E-posta</label>
+              <input id="eposta" name="eposta" type="email" required />
+            </div>
+            <div class="form-row">
+              <label for="mesaj">Mesajınız</label>
+              <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+            </div>
+            <button type="submit">Gönder</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="yil"></span> WebSiteniz. Tüm hakları saklıdır.</p>
+      </div>
+    </footer>
+
+    <script src="/scripts/main.js" defer></script>
+  </body>
+</html>
