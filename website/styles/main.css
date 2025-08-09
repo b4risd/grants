@@ -64,7 +64,7 @@ img { max-width: 100%; height: auto; display: block; }
 .theme-neon .btn-primary { box-shadow: 0 0 24px rgba(167,139,250,0.25), 0 0 24px rgba(34,211,238,0.25) inset; }
 
 /* Hero */
-.hero { padding: 84px 0; position: relative; overflow: hidden; }
+.hero { padding: 96px 0 72px; position: relative; overflow: hidden; }
 .hero-grid { display: grid; gap: 40px; grid-template-columns: 1.1fr 0.9fr; align-items: center; }
 .hero h1 { font-size: 3rem; line-height: 1.1; margin: 0 0 14px; letter-spacing: -0.01em; }
 .hero p { color: var(--muted); margin: 0 0 20px; }
@@ -155,3 +155,6 @@ img { max-width: 100%; height: auto; display: block; }
   .nav.open { display: flex; }
   .nav-toggle { display: inline-flex; }
 }
+
+.gradient-title { background: linear-gradient(90deg, var(--text), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.features { padding-top: 24px; }
